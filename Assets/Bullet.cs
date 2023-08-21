@@ -22,18 +22,13 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Crab"))
-        {
-            Debug.Log("Collision with player object");
-        }
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Crab"))
         {
+            var crab = other.gameObject.GetComponent<Crab>();
+            crab.TakeDamage();
             // Trigger-based collision with an object with the specified tag
             Debug.Log("Trigger collision with other object");
         }
