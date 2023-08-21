@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2609387924726073057}
   - component: {fileID: 3486376634179099503}
   - component: {fileID: 4068880998969226640}
+  - component: {fileID: -4438271897742451260}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -101,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -109,10 +110,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &4068880998969226640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,4 +126,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feec16cd2b1f0cc48bf0252296e455ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
+--- !u!114 &-4438271897742451260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995472531165498178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f8c6e4b5f17974ebd883237c8cc0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  lineOfSite: 0
+  shootingRange: 0
+  fireRate: 1
+  health: 100
+  bullet: {fileID: 0}
+  bulletParent: {fileID: 0}

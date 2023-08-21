@@ -12,12 +12,13 @@ public class BulletScript : MonoBehaviour
         bulletRB = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
-        bulletRB.velocity = new Vector2(moveDir.x, moveDir.y);
+        bulletRB.velocity = new Vector2(moveDir.x, 0);
         Destroy(this.gameObject, 2);
     }
 
     void Update()
     {
-        
+            
     }
+
 }
