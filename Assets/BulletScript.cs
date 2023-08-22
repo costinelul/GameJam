@@ -20,4 +20,28 @@ public class BulletScript : MonoBehaviour
     {
         
     }
+<<<<<<< Updated upstream
+=======
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            var player = collision.gameObject.GetComponent<Health>();
+            player.TakeDamage();
+            Debug.Log("Collision with player");
+        }
+        Destroy(gameObject);
+    }
+
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Player"))
+    //    {
+    //        var player = other.gameObject.GetComponent<Health>();
+    //        player.TakeDamage();
+    //        Debug.Log("Trigger collision with player");
+    //    }
+    //}
+>>>>>>> Stashed changes
 }
