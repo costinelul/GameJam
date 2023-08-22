@@ -23,13 +23,23 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    //void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.TryGetComponent<Crab>(out Crab crab))
+    //    {
+    //        crab.TakeDamage();
+    //        Debug.Log("Collision with crab");
+    //    }
+    //    Destroy(gameObject);
+    //}
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.TryGetComponent<Crab>(out Crab crab))
+        if (other.gameObject.CompareTag("Crab"))
         {
+            var crab = other.gameObject.GetComponent<Crab>();
             crab.TakeDamage();
-            Debug.Log("Collision with crab");
+            Debug.Log("Trigger collision with other object");
         }
-        Destroy(gameObject);
     }
 }

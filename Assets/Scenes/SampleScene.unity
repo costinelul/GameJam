@@ -213,9 +213,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crab
       objectReference: {fileID: 0}
+    - target: {fileID: 1655543217259361533, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
+      propertyPath: m_TagString
+      value: Crab
+      objectReference: {fileID: 0}
     - target: {fileID: 5308685026739232528, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475541352323108481, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976531288049666871, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976531288049666871, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976531288049666871, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7451302023355532710, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,7 +303,7 @@ PrefabInstance:
       objectReference: {fileID: 2047206128}
     - target: {fileID: 9033661078463065740, guid: 67f42606e453998488135fa9888e9fb2, type: 3}
       propertyPath: shootingRange
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
