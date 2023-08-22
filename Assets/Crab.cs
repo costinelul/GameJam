@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Crab : MonoBehaviour
 {
-    public float Health = 100;
+    public float Health = 100f;
     void Start()
     {
         
