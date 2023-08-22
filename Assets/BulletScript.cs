@@ -12,13 +12,36 @@ public class BulletScript : MonoBehaviour
         bulletRB = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
-        bulletRB.velocity = new Vector2(moveDir.x, 0);
+        bulletRB.velocity = new Vector2(moveDir.x, moveDir.y);
         Destroy(this.gameObject, 2);
     }
 
     void Update()
     {
-            
+        
+    }
+<<<<<<< Updated upstream
+=======
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            var player = collision.gameObject.GetComponent<Health>();
+            player.TakeDamage();
+            Debug.Log("Collision with player");
+        }
+        Destroy(gameObject);
     }
 
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Player"))
+    //    {
+    //        var player = other.gameObject.GetComponent<Health>();
+    //        player.TakeDamage();
+    //        Debug.Log("Trigger collision with player");
+    //    }
+    //}
+>>>>>>> Stashed changes
 }
