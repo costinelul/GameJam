@@ -37,9 +37,10 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Crab"))
         {
-            var crab = other.gameObject.GetComponent<Crab>();
+            Crab crab = other.GetComponent<Crab>();
             crab.TakeDamage();
-            Debug.Log("Trigger collision with other object");
+            Debug.Log("Trigger collision with crab");
         }
+        Destroy(gameObject);
     }
 }
