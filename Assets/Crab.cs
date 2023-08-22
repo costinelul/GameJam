@@ -18,7 +18,7 @@ public class Crab : MonoBehaviour
 
     public void TakeDamage()
     {
-        Health -= 10;
+        Health -= 10f;
         if (Health <= 0)
         {
             Destroy(gameObject);
