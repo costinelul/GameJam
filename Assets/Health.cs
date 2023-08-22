@@ -16,17 +16,12 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-
+        // trebuie pus cand ia caracterul damage (inamici + folosire abilitate)
     }
 
-    public void TakeDamage()
+    void TakeDamage(int damage)
     {
-        currentHealth -= 10;
-        if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+        currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
-        Debug.Log(currentHealth);
     }
 }
