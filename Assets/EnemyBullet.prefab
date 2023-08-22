@@ -189,8 +189,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feec16cd2b1f0cc48bf0252296e455ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  speed: 1
-=======
   speed: 10
->>>>>>> Stashed changes

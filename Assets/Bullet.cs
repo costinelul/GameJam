@@ -23,8 +23,6 @@ public class Bullet : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
-=======
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent<Crab>(out Crab crab))
@@ -34,15 +32,4 @@ public class Bullet : MonoBehaviour
         }
         Destroy(gameObject);
     }
-
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Crab"))
-    //    {
-    //        var crab = other.gameObject.GetComponent<Crab>();
-    //        crab.TakeDamage();
-    //        Debug.Log("Trigger collision with crab");
-    //    }
-    //}
->>>>>>> Stashed changes
 }
