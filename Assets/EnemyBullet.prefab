@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4710747355360845840}
   - component: {fileID: 2609387924726073057}
+  - component: {fileID: 6557359212840724731}
   - component: {fileID: 3486376634179099503}
   - component: {fileID: 4068880998969226640}
   m_Layer: 0
@@ -86,6 +87,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6557359212840724731
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995472531165498178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12, y: 12}
+    newSize: {x: 12, y: 12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.1699998, y: -0.77}
+      - {x: 4.13, y: -0.76}
+      - {x: 5.54, y: 0.64}
+      - {x: 5.54, y: 2.69}
+      - {x: 4.13, y: 4.1}
+      - {x: 3.1999998, y: 4.58}
+      - {x: -4.64, y: 4.58}
+      - {x: -5.2999997, y: 4.22}
+      - {x: -5.54, y: 3.6}
+      - {x: -5.54, y: 3.1}
+      - {x: -5.52, y: 3.1}
+      - {x: -5.04, y: 2.62}
+      - {x: -4.58, y: 2.62}
+      - {x: -5.0699997, y: 0.76}
+      - {x: -5.54, y: 0.24}
+      - {x: -5.54, y: -0.24}
+      - {x: -4.56, y: -1.22}
+      - {x: 3.1399999, y: -1.22}
+  m_UseDelaunayMesh: 0
 --- !u!50 &3486376634179099503
 Rigidbody2D:
   serializedVersion: 4
@@ -98,7 +162,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -125,4 +189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feec16cd2b1f0cc48bf0252296e455ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   speed: 1
+=======
+  speed: 10
+>>>>>>> Stashed changes
