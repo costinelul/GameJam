@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D player;
 
+    public CoinManager coinManager;
+
     void Start()
     {
         isJumping = true;
@@ -70,6 +72,15 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             isJumping = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            coinManager.coinCount++;
         }
     }
 }

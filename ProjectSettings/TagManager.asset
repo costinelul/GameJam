@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Crab
+  - Coin
   layers:
   - Default
   - TransparentFX
