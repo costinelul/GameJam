@@ -5,24 +5,15 @@ using UnityEngine.UI;
 
 public class Crab : MonoBehaviour
 {
-    public float Health = 100f;
-    void Start()
-    {
-        
-    }
+    public int health = 100;
 
-    void Update()
+    public void TakeDamage(int damage)
     {
-        
-    }
-
-    public void TakeDamage()
-    {
-        Health -= 10f;
-        if (Health <= 0)
+        health -= damage;
+        if (health <= 0)
         {
             Destroy(gameObject);
         }
-        Debug.Log(Health);
+        Debug.Log(health);
     }
 }

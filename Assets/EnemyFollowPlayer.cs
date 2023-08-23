@@ -15,6 +15,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
     private Transform player;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -34,7 +35,6 @@ public class EnemyFollowPlayer : MonoBehaviour
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             
             nextFireTime = Time.time + fireRate;
-            
         }
     }
 
@@ -57,6 +57,5 @@ public class EnemyFollowPlayer : MonoBehaviour
                 transform.Rotate(0, 180, 0);
             }
         }
-
     }
 }

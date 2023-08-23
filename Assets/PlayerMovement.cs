@@ -38,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-  
         if (Keyboard.current.aKey.wasPressedThisFrame)
         {
             if(isFacingRight is true)
@@ -46,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
                 isFacingRight = false;
                 transform.Rotate(0, 180, 0);
             }
-         
         }
 
         if (Keyboard.current.dKey.wasPressedThisFrame)
@@ -56,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
                 isFacingRight = true;
                 transform.Rotate(0, 180, 0);
             }
-            
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

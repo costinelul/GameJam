@@ -14,14 +14,9 @@ public class Health : MonoBehaviour
         healthbar.SetMaxHealth(maxHealth);
     }
 
-    void Update()
+    public void TakeDamage(int damage)
     {
-
-    }
-
-    public void TakeDamage()
-    {
-        currentHealth -= 10;
+        currentHealth -= damage;
         if (currentHealth <= 0)
         {
             Destroy(gameObject);

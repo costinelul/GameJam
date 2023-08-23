@@ -6,6 +6,7 @@ public class PowerUp : MonoBehaviour
 {
     public float multiplier = 2f;
     public float duration = 2f;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
