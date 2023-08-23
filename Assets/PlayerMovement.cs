@@ -63,7 +63,12 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             isJumping = false;
-        }   
+        }
+
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Destroy(player);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
