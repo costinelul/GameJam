@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     GameObject target;
     public float speed;
     Rigidbody2D bulletRB;
-    public int damage = 10;
+    public float damage = 10f;
 
     void Start()
     {

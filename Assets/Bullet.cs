@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public float speed;
     public float destroyXPosition = 60;
     private Rigidbody2D rb;
-    public int damage = 10;
+    public float damage = 10f;
 
     void Start()
     {

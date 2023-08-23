@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Crab : MonoBehaviour
 {
-    public int health = 100;
+    public float health = 100f;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)
